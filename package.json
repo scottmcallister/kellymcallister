@@ -1,0 +1,23 @@
+{
+  "name": "kellymcallister",
+  "version": "1.0.0",
+  "description": "A portfolio website for my wife. It's basically just serving static content, but I decided to use Flask for it just because.",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "styles": "lessc static/less/main.less static/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottmcallister/kellymcallister.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scottmcallister/kellymcallister/issues"
+  },
+  "homepage": "https://github.com/scottmcallister/kellymcallister#readme",
+  "devDependencies": {
+    "less": "^2.7.3"
+  }
+}
