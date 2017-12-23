@@ -3,9 +3,19 @@
 {{ super() }}
 <div>
     <header class="masthead">
-        <h1 class="title">Kelly McAllister</h1>
-        <h2 class="subtitle">Voice Over Talent</h2>
+        <div>
+            <h1 class="title">Kelly McAllister</h1>
+            <h2 class="subtitle">Voice Over Talent</h2>
+        </div>
     </header>
-    <div></div>
+    <div class="contact">
+        <h1>Contact Kelly</h1>
+        <form action="/send_email" method="post">
+            <input type="text" placeholder="Name" name="name">
+            <input type="email" placeholder="Email" name="email">
+            <textarea placeholder="Your message to Kelly" name="message" rows="10" cols="30"></textarea>
+            <button class="submit-button">Submit</button>
+        </form>
+    </div>
 </div>
 {% endblock %}

@@ -30,4 +30,35 @@ body {
     }
 }
 
+.contact {
+    background: @dark-blue;
+    padding: 50px;
+    h1 {
+        color: @white;
+        text-align: center;
+        margin-bottom: 40px
+    }
+    form {
+        max-width: 700px;
+        input, textarea {
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 3px;
+            border-radius: 1px;
+            border: none;
+        }
+        margin: auto;
+        .submit-button {
+            padding: 5px 12px;
+            background: @light-blue;
+            color: @white;
+            border-radius: 3px;
+            border: none;
+        }
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 

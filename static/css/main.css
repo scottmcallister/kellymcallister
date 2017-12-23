@@ -21,3 +21,34 @@ body {
   width: 100%;
   text-align: center;
 }
+.contact {
+  background: #5680E9;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact h1 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.contact form {
+  max-width: 700px;
+  margin: auto;
+}
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 3px;
+  border-radius: 1px;
+  border: none;
+}
+.contact form .submit-button {
+  padding: 5px 12px;
+  background: #5AB9EA;
+  color: #ffffff;
+  border-radius: 3px;
+  border: none;
+}
