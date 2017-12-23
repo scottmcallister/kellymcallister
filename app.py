@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 app.config.from_object('config')
@@ -6,6 +6,14 @@ app.config.from_object('config')
 
 @app.route('/')
 def home():
+    return render_template('home.html')
+
+
+@app.route('/send_email', methods=['POST'])
+def send_email():
+    print(request.form['name'])
+    print(request.form['email'])
+    print(request.form['message'])
     return render_template('home.html')
 
 
