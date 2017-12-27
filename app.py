@@ -11,12 +11,14 @@ app.config['MAIL_USERNAME'] = str(os.environ['FLASK_MAIL_USERNAME'])
 app.config['MAIL_PASSWORD'] = str(os.environ['FLASK_MAIL_PASSWORD'])
 app.config['MAIL_USE_TLS'] = str(os.environ['FLASK_MAIL_USE_TLS']) == 'True'
 app.config['MAIL_USE_SSL'] = str(os.environ['FLASK_MAIL_USE_SSL']) == 'True'
+app.config['RECAPTCHA_KEY'] = str(os.environ['RECAPTCHA_KEY'])
+app.config['RECAPTCHA_SECRET'] = str(os.environ['RECAPTCHA_SECRET'])
 mail = Mail(app)
 
 
 @app.route('/')
 def home():
-    return render_template('home.html')
+    return render_template('home.html', recaptcha=app.config['RECAPTCHA_KEY'])
 
 
 @app.route('/send_email', methods=['POST'])
