@@ -1,6 +1,8 @@
 body {
   background: #C1C8E4;
   color: #5680E9;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
 }
 .masthead {
   height: 100vh;
