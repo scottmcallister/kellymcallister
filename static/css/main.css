@@ -1,12 +1,15 @@
 body {
-  background: #C1C8E4;
+  background-image: url('/static/img/studio_bw.jpeg');
+  background-size: cover;
+  -moz-background-size: cover;
+  background-position: center;
   color: #5680E9;
   font-family: 'Montserrat', sans-serif;
   margin: 0px;
 }
 .masthead {
   height: 100vh;
-  background: #8860D0;
+  background: none;
   display: flex;
   align-items: center;
   justify-content: center;
