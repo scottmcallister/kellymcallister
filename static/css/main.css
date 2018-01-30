@@ -21,14 +21,14 @@ body {
   font-size: 50px;
   width: 100%;
   text-align: center;
-  text-shadow: #000 0 0 5px;
+  text-shadow: #000 0 0 15px;
 }
 .masthead .subtitle {
   color: #ffffff;
   font-size: 30px;
   width: 100%;
   text-align: center;
-  text-shadow: #000 0 0 5px;
+  text-shadow: #000 0 0 15px;
 }
 .overview {
   padding: 20px;
@@ -52,6 +52,11 @@ body {
   color: #fff;
   flex: 2;
   font-size: 25px;
+  text-align: justify;
+}
+.overview p a {
+  color: #5AB9EA !important;
+  text-decoration: none;
 }
 @media (max-width: 700px) {
   .overview {
