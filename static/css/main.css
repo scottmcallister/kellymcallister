@@ -63,6 +63,10 @@ body {
     flex-direction: column;
   }
 }
+.demos {
+  padding: 40px;
+  background-color: #ddd;
+}
 .contact {
   background: #5680E9;
   padding: 50px;
