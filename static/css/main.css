@@ -67,6 +67,10 @@ body {
   padding: 40px;
   background-color: #ddd;
 }
+.demos h2 {
+  color: #666;
+  text-align: center;
+}
 .contact {
   background: #5680E9;
   padding: 50px;
