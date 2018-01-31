@@ -16,6 +16,7 @@ body {
     background-position: center;
     color: @dark-blue;
     font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
     margin: 0px;
 }
 
@@ -56,37 +57,56 @@ iframe {
     height: auto;
     min-height: 100vh;
     padding: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     background-color: @gray;
-    .img-container {
-        flex: 1;
-        height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .header-container {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        img {
-            height: 400px;
-        }
-    }
-    p {
-        padding: 10px;
-        color: #fff;
-        flex: 2;
-        font-size: 25px;
-        text-align: justify;
-        a {
-            color: @light-blue !important;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        a:hover {
-            color: @dark-blue !important;
-        }
-    }
-    @media (max-width: 700px) {
         flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        flex: 1;
+        h1 {
+            color: @white;
+            text-align: center;
+        }
+    }
+    .content {
+        flex: 2;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .img-container {
+            flex: 1;
+            height: 420px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                height: 400px;
+            }
+        }
+        p {
+            font-weight: lighter;
+            padding: 10px;
+            color: #fff;
+            flex: 2;
+            font-size: 25px;
+            text-align: justify;
+            a {
+                color: @light-blue !important;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            a:hover {
+                color: @dark-blue !important;
+            }
+        }
+        @media (max-width: 700px) {
+            flex-direction: column;
+        }
     }
 }
 

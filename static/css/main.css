@@ -7,6 +7,7 @@ body {
   background-position: center;
   color: #0047fc;
   font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
   margin: 0px;
 }
 h1 {
@@ -43,38 +44,57 @@ iframe {
   height: auto;
   min-height: 100vh;
   padding: 20px;
+  background-color: #888;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.overview .header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex: 1;
+}
+.overview .header-container h1 {
+  color: #ffffff;
+  text-align: center;
+}
+.overview .content {
+  flex: 2;
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: #888;
 }
-.overview .img-container {
+.overview .content .img-container {
   flex: 1;
   height: 420px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.overview .img-container img {
+.overview .content .img-container img {
   height: 400px;
 }
-.overview p {
+.overview .content p {
+  font-weight: lighter;
   padding: 10px;
   color: #fff;
   flex: 2;
   font-size: 25px;
   text-align: justify;
 }
-.overview p a {
+.overview .content p a {
   color: #7bd3ff !important;
   text-decoration: none;
   font-weight: bold;
 }
-.overview p a:hover {
+.overview .content p a:hover {
   color: #0047fc !important;
 }
 @media (max-width: 700px) {
-  .overview {
+  .overview .content {
     flex-direction: column;
   }
 }
