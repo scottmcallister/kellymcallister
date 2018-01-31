@@ -20,18 +20,20 @@ iframe {
   justify-content: center;
 }
 .masthead .title {
-  color: #ffffff;
+  font-weight: bold;
+  color: #dddddd;
   font-size: 50px;
   width: 100%;
   text-align: center;
-  text-shadow: #000 0 0 15px;
+  text-shadow: #000 0 0 8px;
 }
 .masthead .subtitle {
-  color: #ffffff;
+  font-weight: bold;
+  color: #dddddd;
   font-size: 30px;
   width: 100%;
   text-align: center;
-  text-shadow: #000 0 0 15px;
+  text-shadow: #000 0 0 8px;
 }
 .overview {
   height: auto;
