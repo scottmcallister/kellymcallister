@@ -22,13 +22,17 @@
         <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/320257085&amp;color=%23847c8c&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=false&amp;show_reposts=false&amp;show_teaser=true"></iframe>
 </div>
 <div class="contact">
-    <h1>Contact Kelly</h1>
-    <form action="/send_email" method="post">
-        <input type="text" placeholder="Name" name="name" required>
-        <input type="email" placeholder="Email" name="email" required>
-        <textarea placeholder="Your message to Kelly" name="message" rows="10" cols="30" required></textarea>
-        <div class="g-recaptcha" data-sitekey="{{recaptcha}}"></div>
-        <button class="submit-button">Submit</button>
-    </form>
+    <div class="heading-container">
+        <h1>Contact Kelly</h1>
+    </div>
+    <div class="form-container">
+        <form action="/send_email" method="post">
+            <input type="text" placeholder="Name" name="name" required>
+            <input type="email" placeholder="Email" name="email" required>
+            <textarea placeholder="Your message to Kelly" name="message" rows="10" cols="30" required></textarea>
+            <div class="g-recaptcha" data-sitekey="{{recaptcha}}"></div>
+            <button class="submit-button">Submit</button>
+        </form>
+    </div>
 </div>
 {% endblock %}

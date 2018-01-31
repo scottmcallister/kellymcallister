@@ -9,6 +9,9 @@ body {
   font-family: 'Montserrat', sans-serif;
   margin: 0px;
 }
+iframe {
+  margin-bottom: 30px;
+}
 .masthead {
   height: 100vh;
   background: none;
@@ -31,6 +34,8 @@ body {
   text-shadow: #000 0 0 15px;
 }
 .overview {
+  height: auto;
+  min-height: 100vh;
   padding: 20px;
   display: flex;
   flex-direction: row;
@@ -57,6 +62,7 @@ body {
 .overview p a {
   color: #5AB9EA !important;
   text-decoration: none;
+  font-weight: bold;
 }
 @media (max-width: 700px) {
   .overview {
@@ -64,26 +70,42 @@ body {
   }
 }
 .demos {
-  padding: 40px;
+  height: auto;
+  min-height: 70vh;
+  padding: 50px;
   background-color: #ddd;
 }
 .demos h2 {
+  padding: 20px;
   color: #666;
   text-align: center;
 }
 .contact {
+  height: auto;
+  height: 100vh;
   background: #5680E9;
-  padding: 50px;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+}
+.contact .heading-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
-.contact h1 {
+.contact .heading-container h1 {
+  vertical-align: middle;
   color: #ffffff;
   text-align: center;
   margin-bottom: 40px;
 }
+.contact .form-container {
+  flex: 2;
+}
 .contact form {
+  width: 90%;
   max-width: 700px;
   margin: auto;
 }
@@ -96,6 +118,7 @@ body {
   border: none;
 }
 .contact form .submit-button {
+  margin-top: 20px;
   padding: 5px 12px;
   background: #5AB9EA;
   color: #ffffff;
