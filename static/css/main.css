@@ -24,10 +24,18 @@ iframe {
   align-items: center;
   justify-content: center;
 }
+.masthead div {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .masthead .title {
   font-weight: bold;
   color: #dddddd;
   font-size: 50px;
+  margin-bottom: 0px;
+  margin-top: 80px;
   width: 100%;
   text-align: center;
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
@@ -39,6 +47,16 @@ iframe {
   width: 100%;
   text-align: center;
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+.masthead .download-btn {
+  border: 1px solid #444;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #ffffff !important;
+  background: #666666;
+  padding: 20px 15px;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
 }
 .overview {
   height: auto;
