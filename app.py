@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 from flask_mail import Mail, Message
 import os
+import requests
 
 app = Flask(__name__)
 app.config.from_object('config')
@@ -23,7 +24,15 @@ def home():
 
 @app.route('/send_email', methods=['POST'])
 def send_email():
+    valid_recaptcha = False
     if('g-recaptcha-response' in request.form):
+        payload = {'response': request.form['g-recaptcha-response'],
+                   'secret': app.config['RECAPTCHA_SECRET']}
+        r = requests.post('https://www.google.com/recaptcha/api/siteverify',
+                          data=payload)
+        j = r.json()
+        valid_recaptcha = j['success']
+    if(valid_recaptcha):
         email_title = "Message from " + request.form['name'] + ' (' \
             + request.form['email'] + ')'
         msg = Message(email_title,
