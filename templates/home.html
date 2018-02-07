@@ -36,8 +36,8 @@
             <input type="text" placeholder="Name" name="name" required>
             <input type="email" placeholder="Email" name="email" required>
             <textarea placeholder="Your message to Kelly" name="message" rows="10" cols="30" required></textarea>
-            <div class="g-recaptcha" data-sitekey="{{recaptcha}}"></div>
-            <button class="submit-button">Submit</button>
+            <div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="{{recaptcha}}"></div>
+            <button id="submit-button" disabled>Submit</button>
         </form>
     </div>
 </div>

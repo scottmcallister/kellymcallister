@@ -23,14 +23,15 @@ def home():
 
 @app.route('/send_email', methods=['POST'])
 def send_email():
-    email_title = "Message from " + request.form['name'] + ' (' \
-        + request.form['email'] + ')'
-    msg = Message(email_title,
-                  sender=app.config['MAIL_USERNAME'],
-                  recipients=['mr.scott.mcallister@gmail.com'])
-    email_body = str(request.form['message'])
-    msg.body = email_body
-    mail.send(msg)
+    if('g-recaptcha-response' in request.form):
+        email_title = "Message from " + request.form['name'] + ' (' \
+            + request.form['email'] + ')'
+        msg = Message(email_title,
+                      sender=app.config['MAIL_USERNAME'],
+                      recipients=['mr.scott.mcallister@gmail.com'])
+        email_body = str(request.form['message'])
+        msg.body = email_body
+        mail.send(msg)
     return render_template('home.html')
 
 
