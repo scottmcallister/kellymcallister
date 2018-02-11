@@ -43,18 +43,3 @@ def send_email():
         msg.body = email_body
         mail.send(msg)
     return render_template('home.html')
-
-
-@app.route('/contact')
-def contact():
-    return render_template('contact.html')
-
-
-@app.route('/voice')
-def voice():
-    return render_template('voice.html')
-
-
-@app.route('/theatre')
-def theatre():
-    return render_template('theatre.html')
