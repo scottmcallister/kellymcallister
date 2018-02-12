@@ -1,6 +1,6 @@
 # kellymcallister
 
-A portfolio website for my wife. It's basically just serving static content, but I decided to use Flask for it just in case I want to build out additional features.
+A portfolio [website](https://kellymcallister.ca) for my wife. It's basically just serving static content, but I decided to use Flask for it just in case I want to build out additional features.
 
 ## Installation
 
